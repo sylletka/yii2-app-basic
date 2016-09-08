@@ -1,6 +1,6 @@
 {
-    "name": "yiisoft/yii2-app-basic",
-    "description": "Yii 2 Basic Project Template",
+    "name": "sylletka/yii2-app-basic",
+    "description": "Yii 2 Basic Project Template enhanced",
     "keywords": ["yii2", "framework", "basic", "project template"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
@@ -13,11 +13,30 @@
         "source": "https://github.com/yiisoft/yii2"
     },
     "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sylletka/yii2-admin"
+        }
+    ],
+    "require": {
+        "sylletka/yii2-admin": "dev-master"
+    }
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.5",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0"
+        "yiisoft/yii2-authclient": "*",
+        "yiisoft/yii2-jui": "*",
+        "yiisoft/yii2-imagine": "~2.0.0",
+        "sylletka/yii2-admin" : "dev-master",
+        "pheme/yii2-settings": "*",
+        "sweelix/yii2-plupload": "*",
+        "2amigos/yii2-ckeditor-widget" : "*",
+        "faryshta/yii2-clockpicker" : "dev-master",
+        "mtdowling/cron-expression" : "dev-master",
+        "nex/yii2-chosen": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
